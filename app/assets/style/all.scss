@@ -1,23 +1,236 @@
-$color: #00cc99;
+// .header {
+//   height: 200px;
+//   background-color: #00cc99; }
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
+// .footer {
+//   height: 200px;
+//   background-color: #00cc99; }
+
+// .box {
+//   width: 100px;
+//   height: 100px;
+//   background-color: red;
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-transition: all 0.5s;
+//   -o-transition: all 0.5s;
+//   transition: all 0.5s; }
+//   .box:hover {
+//     width: 200px;
+//     background-color: #00cc99; }
+    
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
+ul, li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.logo a {
+  display: block;
+  width: 80px;
+  height: 48px;
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+  background-repeat: no-repeat;
+  background-size: 80px 48.57px;
+}
+
+nav{
+  background-color: #aa0601;
+}
+
+footer {
+  background-color: #aa0601;
+  color: #fff;
+  padding: 24px 0px;
+} 
+
+.navconet{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.menu a {
+  color: #fff;
+  padding: 32px;
+  font-size: 20px;
+}
+.menu a:hover {
+  color: rgb(236, 255, 142);
+}
+
+.sec2under{
+  background-color:#FBF2F2 ;
+}
+
+.sec2{
+  padding-top: 48px;
+  padding-bottom: 24px;
+  h2{
+    font-size: 48px;
+    color: #650300;
+  }
+}
+.sec2icon1{
+  font-size: 84px;
+  color:#650300;
+  display: block;
+  text-align: center;
+}
+
+.sec2grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
+}
+
+.headerimg{
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png) no-repeat center;
+  background-size: cover;
+  height: 787px;
+  
+}
+
+
+
+.flexcontainer{
+  display: flex;
+  padding: 0 15px;
+  justify-content: center;
+  gap: 24px;
+}
+
+.flex-item{
+  flex-basis: 100%;
+  padding:18px;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  background-color: #FFF;
+}
+
+.footernav {
   display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerlist {
+  display: flex;
+  justify-self: start;
+}
+
+
+
+footer a {
+  color:#fff;
+}
+footer .socialicon {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+ 
+ 
+footer img {
+  width: 48px;
+  height: 48px;
+}
+
+
+
+footer .contect {
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.5;
+  padding-bottom: 32px;
+  border-bottom: #fff solid 1px;
+}
+
+.cpnotice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privacy {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.privacy li {
+  padding: 24px;
+}
+ 
+@media (max-width:991px) {
+  .container{
+    max-width:720px;
+    padding: 0 36px;
+  }
+  .sec2grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+  }
+  
+  
+  
+
+}
+
+@media (max-width:768px) {
+  .container {
+    max-width:374px;
+    padding: 0 12px;
+  }
+
+  .sec2grid{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 12px;
+  }
+  
+  .menu a {
+  display: none;
+  }
+
+  footer img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footerlist li{
+    display: none;
+  }
+  .cpnotice {
+    flex-direction: column;
+    justify-content: left;
+  }
+  footer .contect {
+    color: #fff;
+    font-size: 16px;
   }
 }
