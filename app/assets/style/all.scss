@@ -1,25 +1,3 @@
-// .header {
-//   height: 200px;
-//   background-color: #00cc99; }
-
-// .footer {
-//   height: 200px;
-//   background-color: #00cc99; }
-
-// .box {
-//   width: 100px;
-//   height: 100px;
-//   background-color: red;
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-transition: all 0.5s;
-//   -o-transition: all 0.5s;
-//   transition: all 0.5s; }
-//   .box:hover {
-//     width: 200px;
-//     background-color: #00cc99; }
-    
 body {
   font-family: "Noto Sans TC", sans-serif;
   overflow-x: hidden;
@@ -33,6 +11,7 @@ ul, li{
 a{
   text-decoration: none;
 }
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -87,17 +66,33 @@ footer {
 
 .sec2{
   padding-top: 48px;
-  padding-bottom: 24px;
-  h2{
-    font-size: 48px;
-    color: #650300;
-  }
-}
-.sec2icon1{
-  font-size: 84px;
-  color:#650300;
-  display: block;
-  text-align: center;
+  padding-bottom: 80px;
+
+    h2{
+      font-size: 48px;
+      color:#650300;
+      padding: 36px;
+      font-weight: bold;
+      text-align: center;
+    }
+    span{
+      font-size: 84px;
+      color:#650300;
+      display: block;
+      padding: 24px;
+      text-align: center;
+    }
+    h3{
+      font-size: 24px;
+      font-weight: bold;
+      padding: 16px;
+      color::#650300;
+      text-align: center;
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.5em;
+    }
 }
 
 .sec2grid{
