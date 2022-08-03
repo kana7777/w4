@@ -1,0 +1,330 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  overflow-x: hidden;
+  margin: 0 auto; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px; }
+
+.logo a {
+  display: block;
+  width: 80px;
+  height: 48px;
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+  background-repeat: no-repeat;
+  background-size: 80px 48.57px; }
+
+nav {
+  background-color: #aa0601; }
+
+footer {
+  background-color: #aa0601;
+  color: #fff;
+  padding: 24px 0px; }
+
+.navconet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 1.5; }
+
+.menu a {
+  color: #fff;
+  padding: 32px;
+  font-size: 20px; }
+
+.menu a:hover {
+  color: #ecff8e; }
+
+.sec2under {
+  background-color: #FBF2F2; }
+
+.sec2 {
+  padding-top: 48px;
+  padding-bottom: 80px; }
+  .sec2 h2 {
+    font-size: 48px;
+    color: #650300;
+    padding: 36px;
+    font-weight: bold;
+    text-align: center; }
+  .sec2 span {
+    font-size: 84px;
+    color: #650300;
+    display: block;
+    padding: 24px;
+    text-align: center; }
+  .sec2 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+    color: #650300;
+    text-align: center; }
+  .sec2 p {
+    font-size: 16px;
+    line-height: 1.5em; }
+
+.sec2grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px; }
+
+.sec3box {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center; }
+  .sec3box h2 {
+    text-align: center;
+    color: #650300;
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 48px; }
+  .sec3box .gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; }
+  .sec3box img {
+    height: 416px; }
+  .sec3box h3 {
+    color: #AA0601;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif; }
+
+.sec4 {
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png) no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  padding-bottom: 80px; }
+  .sec4 h2 {
+    color: #fff;
+    font-size: 72px;
+    text-align: center;
+    padding: 80px;
+    font-weight: bold; }
+  .sec4 img {
+    height: 240px;
+    display: block; }
+  .sec4 .sec4flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .sec4 h3 {
+    color: #AA0601;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    padding: 8px; }
+
+.sec5 {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  line-height: 1.5; }
+  .sec5 .sec5grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px; }
+  .sec5 h2 {
+    text-align: center;
+    color: #650300;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 24px; }
+  .sec5 img {
+    max-width: 100%;
+    display: block;
+    border-radius: 4px; }
+  .sec5 .card {
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 6px #00000029;
+            box-shadow: 0px 2px 6px #00000029; }
+
+.headerimg {
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png) no-repeat center;
+  background-size: cover;
+  height: 787px;
+  max-width: 100%; }
+
+.flexcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px; }
+
+.flex-item {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 18px; }
+
+.box {
+  background-color: #FFF; }
+
+.footernav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footerlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: start; }
+
+footer a {
+  color: #fff; }
+
+footer .socialicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+footer img {
+  width: 48px;
+  height: 48px; }
+
+footer .contect {
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.5;
+  padding-bottom: 32px;
+  border-bottom: #fff solid 1px; }
+
+.cpnotice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.privacy li {
+  padding: 24px; }
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    padding: 0 36px; }
+  .headerimg {
+    height: 787px; }
+  .sec2grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px; }
+  .sec3box img {
+    height: 336px;
+    max-width: 100%; }
+  .sec3box .gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px; }
+  .sec4flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 374px;
+    padding: 0 12px; }
+  .headerimg {
+    height: 375px; }
+  .sec2 {
+    margin-bottom: 40px; }
+    .sec2 h2 {
+      font-size: 24px; }
+  .sec2grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px; }
+  .menu a {
+    display: none; }
+  footer img {
+    width: 24px;
+    height: 24px; }
+  .footerlist li {
+    display: none; }
+  .cpnotice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left; }
+  footer .contect {
+    color: #fff;
+    font-size: 16px; }
+  .sec3box img {
+    height: 348px; }
+  .sec4 h2 {
+    font-size: 24px;
+    padding: 40px; }
+  .sec4 img {
+    max-width: 100%;
+    background: cover; }
+  .sec4 .s4flexitem {
+    padding-bottom: 20px; } }
+
+/*# sourceMappingURL=all.css.map */
