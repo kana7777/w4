@@ -64,16 +64,28 @@ footer {
 
 .sec2 {
   padding-top: 48px;
-  padding-bottom: 24px; }
+  padding-bottom: 80px; }
   .sec2 h2 {
     font-size: 48px;
-    color: #650300; }
-
-.sec2icon1 {
-  font-size: 84px;
-  color: #650300;
-  display: block;
-  text-align: center; }
+    color: #650300;
+    padding: 36px;
+    font-weight: bold;
+    text-align: center; }
+  .sec2 span {
+    font-size: 84px;
+    color: #650300;
+    display: block;
+    padding: 24px;
+    text-align: center; }
+  .sec2 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+    color: #650300;
+    text-align: center; }
+  .sec2 p {
+    font-size: 16px;
+    line-height: 1.5em; }
 
 .sec2grid {
   display: grid;
