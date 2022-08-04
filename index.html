@@ -14,12 +14,12 @@
 <body>
   <nav class="nav">
     <div class="navconet container">
-        <h1 class="logo"><a href="#" title="logo"></a></h1>
+        <h1 class="logo"><a href="index.html" title="logo"></a></h1>
         <ul class="menu">
             <li><a href="#">系列鏡框</a></li>
             <li><a href="#">門市據點</a></li>
             <li><a href="#">部落格</a></li>
-            <li><a href="#">常見問題</a></li>
+            <li><a href="page2.html">常見問題</a></li>
         </ul>
     </div>
 </nav>
@@ -29,7 +29,7 @@
 
 <header class="header">
   <div class="headerimg">
-      <div class="header container">
+      <div class="container">
           <div class="headerflex">
               <h4>Promise-Desert 2020 早春系列</h4>
               <h3>看得清，才能看得遠</h3>
@@ -38,14 +38,12 @@
       </div>
   </div>   
 </header>
-<div class="box"></div>
-
 <main>
     <!-- 首頁的區塊2 -->
-  <div class="sec2under">
-      <section class="sec2 container">
+  <div class="service">
+      <section class="container">
         <h2>用專業的心，做專業的事</h2>
-          <div class="sec2grid">
+          <div class="grid">
               <div class="griditem">
                 <span class="material-symbols-outlined">
                     monetization_on
@@ -79,8 +77,8 @@
   </div>  
 
   <!-- 首頁的區塊3 -->
-  <div class="sec3">
-    <div class="sec3box container">
+  <div class="classiclassess">
+    <div class="container">
         <h2>經典系列鏡框</h2>
         <div class="gridcontainer">
             <div class="girditem">
@@ -100,15 +98,15 @@
   </div>
 
   <!-- 首頁的區塊4 -->
-  <div class="sec4">
-    <div class="sec4box container">
+  <div class="designglasses">
+    <div class="container">
         <h2>聯名設計鏡框</h2>
-        <div class="sec4flex">
-            <div class="s4flexitem">
-                <img src="./assets/images/home-section4-1.png" alt="">
+        <div class="designflex">
+            <div class="flexitem">
+                <img src="./assets/images/home-section4-1.png" alt="" class="design_photo1">
                 <h3>DOUBLE A+</h3>
             </div>
-            <div class="s4flexitem">
+            <div class="flexitem">
                 <img src="./assets/images/home-section4-2.png" alt="">
                 <h3>YOUTH</h3>
             </div>
@@ -119,45 +117,83 @@
 
   
   <!-- 首頁的區塊5 -->
-  <div class="sec5">
-    <div class="sec5box container">
+  <div class="customer_recomm">
+    <div class="container">
         <h2>顧客推薦</h2>
-        <div class="sec5grid">
-            <div class="griditem">
-                <img src="./assets/images/home-section5-1.png" alt="">
+        <div class="recommen_flex">
+            <div class="flexitem">
                 <div class="card">
+                <img src="./assets/images/home-section5-1.png" alt="">
                     <h4>Jessy</h4>
                     <p>眼鏡品質優良，下次還會想來這邊購買！</p>
-                    <p>2021/06/20</p>
+                    <p class="date">2021/06/20</p>
                 </div>
             </div>
-            <div class="griditem">
-                <img src="./assets/images/home-section5-2.png" alt="">
+            <div class="flexitem">
                 <div class="card">
+                <img src="./assets/images/home-section5-2.png" alt="">
                     <h4>凱倫</h4>
                     <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
-                    <p>2021/06/20</p>
+                    <p class="date">2021/06/20</p>
                 </div>
             </div>
-            <div class="griditem">
-                <img src="./assets/images/home-section5-3.png" alt="">
+            <div class="flexitem">
                 <div class="card">
+                <img src="./assets/images/home-section5-3.png" alt="">
                     <h4>悠悠</h4>
                     <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
-                    <p>2021/06/20</p>
+                    <p class="date">2021/06/20</p>
                 </div>
             </div>
-            <div class="griditem">
-                <img src="./assets/images/home-section5-4.png" alt="">
+            <div class="flexitem">
                 <div class="card">
+                <img src="./assets/images/home-section5-4.png" alt="">
                     <h4>Kyuan</h4>
                     <p>服務很好，品質沒有任何問題，非常喜歡。</p>
-                    <p>2021/06/20</p>
+                    <p class="date">2021/06/20</p>
                 </div>
             </div>
         </div>
     </div>
   </div>
+
+  <!-- 區塊六 -->
+  <div class="contacctus_under">
+    <div class="contectform">
+        <div class="contect_container">
+            <h2>聯絡我們</h2>
+            <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+            <form action="#">
+                <ul class="list_container">
+                    <li>
+                        <label for="name">姓名</label><br>
+                        <input type="text" class="input-text" name="name" placeholder="陳小明">
+                    </li>
+                    <li>
+                        <label for="tel">連絡電話</label><br>
+                        <input type="text" class="input-text" name="tel" placeholder="0912-345-678">
+                    </li>
+                    <li>
+                        <label for="email">電子郵件</label><br>
+                        <input type="text" class="input-text" name="email" placeholder="example@email.com">
+                    </li>
+                    <li>
+                        <label for="text">意見反應</label><br>
+                        <input type="text" class="input-text" name="text" placeholder="請輸入您的意見">
+                    </li>
+                    <li class="form_checkbox">
+                        <input type="checkbox" class="input_check" name="check">
+                        <label for="check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                    </li>
+
+                    <li class="sumbit_btn">
+                        <input type="button" class="input-btn" value="確認送出">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+  </div>  
 </main>
 
 
