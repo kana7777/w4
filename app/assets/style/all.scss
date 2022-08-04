@@ -1,66 +1,21 @@
-
-
-body {
-  font-family: "Noto Sans TC", sans-serif;
-  overflow-x: hidden;
-  margin: 0 auto;
-}
-
-ul, li{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
+@import "varnmixin";
+@import "reset";
+@import "layout";
 
 .container {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
+  @include tab{
+    max-width:720px;
+    padding: 0 12px;
+  }
+  @include mobile{
+      max-width:374px;
+      padding: 0 12px;
+  }
 }
 
-.logo a {
-  display: block;
-  width: 80px;
-  height: 48px;
-  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
-  background-repeat: no-repeat;
-  background-size: 80px 48.57px;
-}
-
-nav{
-  background-color: #aa0601;
-}
-
-footer {
-  background-color: #aa0601;
-  color: #fff;
-  padding: 24px 0px;
-} 
-
-.navconet{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  line-height: 1.5;
-}
-
-.menu a {
-  color: #fff;
-  padding: 32px;
-  font-size: 20px;
-}
-.menu a:hover {
-  color: rgb(236, 255, 142);
-}
 
 .sec2under{
   background-color:#FBF2F2 ;
@@ -88,7 +43,7 @@ footer {
       font-size: 24px;
       font-weight: bold;
       padding: 16px;
-      color::#650300;
+      color:#650300;
       text-align: center;
     }
     p{
@@ -101,12 +56,23 @@ footer {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 24px;
+  @include tab{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+  }
+  @include mobile{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 12px;
+  }
 }
 
 .sec3box{
   margin-top: 80px;
   margin-bottom: 80px;
   text-align: center;
+
   h2{
     text-align: center;
     color:#650300 ;
@@ -118,15 +84,33 @@ footer {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 24px;
+    @include tab{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 24px;
+    }
+    @include mobile{
+      @include tab{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
+      }
+    }
   }
   img{
     height: 416px;
-
-    
+    @include tab{
+      height: 336px;
+      max-width: 100%;
+    }
+    @include mobile{
+      height: 348px;
+    }
   }
+
   h3{
 
-    color: #AA0601;
+    color: $titlecolor;
     text-align: center;
     font-style: italic;
     font-weight: bold;
@@ -152,8 +136,7 @@ footer {
   }
   img{
     height: 240px;
-    display: block;
-    
+    display: block;   
   }
   .sec4flex{
     display: flex;
@@ -161,7 +144,7 @@ footer {
   } 
 
   h3{
-    color:#AA0601 ;
+    color:$titlecolor ;
     text-align: center;
     font-style: italic;
     font-weight: bold;
@@ -214,119 +197,15 @@ footer {
 }
 
 
-
-.flexcontainer{
-  display: flex;
-  padding: 0 15px;
-  justify-content: center;
-  gap: 24px;
-}
-
-.flex-item{
-  flex-basis: 100%;
-  padding:18px;
-}
-
-.box {
-  background-color: #FFF;
-}
-
-.footernav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footerlist {
-  display: flex;
-  justify-self: start;
-}
-
-
-
-footer a {
-  color:#fff;
-}
-footer .socialicon {
-  display: flex;
-  justify-content: flex-end;
-
-}
-
- 
- 
-footer img {
-  width: 48px;
-  height: 48px;
-}
-
-
-
-footer .contect {
-  color: #fff;
-  font-size: 36px;
-  line-height: 1.5;
-  padding-bottom: 32px;
-  border-bottom: #fff solid 1px;
-}
-
-.cpnotice {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.privacy {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.privacy li {
-  padding: 24px;
-}
- 
 @media (max-width:991px) {
-  .container{
-    max-width:720px;
-    padding: 0 36px;
-  }
-  .headerimg{
-    height: 787px;
-  }
-  .sec2grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 24px;
-  }
-  .sec3box{
-    img{
-      height: 336px;
-      max-width: 100%;
-      
-    }
-    .gridcontainer{
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      gap: 24px;
-
-    }
-    
-  }
-  
   .sec4flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   } 
-  
-
 }
 
 @media (max-width:768px) {
-  .container {
-    max-width:374px;
-    padding: 0 12px;
-  }
 
   .headerimg{
     height: 375px;
@@ -338,12 +217,7 @@ footer .contect {
       font-size: 24px;
     }
   }
-  .sec2grid{
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 12px;
-
-  }
+ 
   
   .menu a {
   display: none;
@@ -365,10 +239,7 @@ footer .contect {
     color: #fff;
     font-size: 16px;
   }
-  .sec3box{
-    img{
-      height: 348px;
-    }
+ 
   }
   .sec4{
  
@@ -385,4 +256,3 @@ footer .contect {
     }
   }
 
-}

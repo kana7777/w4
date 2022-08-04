@@ -46,3 +46,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+	font-family: "Noto Sans TC", sans-serif;
+	overflow-x: hidden;
+	margin: 0 auto;
+  }
+  
+  ul, li{
+	list-style: none;
+  }
+  
+  a{
+	text-decoration: none;
+  }

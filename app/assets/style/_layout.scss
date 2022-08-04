@@ -1,0 +1,103 @@
+
+
+nav{
+    background-color: $titlecolor;
+  }
+  
+  footer {
+    background-color: $titlecolor;
+    color: #fff;
+    padding: 24px 0px;
+  } 
+  
+  .navconet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  
+  .menu a {
+    color: #fff;
+    padding: 32px;
+    font-size: 20px;
+  }
+  .menu a:hover {
+    color: rgb(236, 255, 142);
+  }
+  
+  
+.logo a {
+    display: block;
+    width: 80px;
+    height: 48px;
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+    background-repeat: no-repeat;
+    background-size: 80px 48.57px;
+  }
+
+
+
+  
+.footernav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footerlist {
+    display: flex;
+    justify-self: start;
+  }
+  
+  
+  
+  footer a {
+    color:#fff;
+  }
+  footer .socialicon {
+    display: flex;
+    justify-content: flex-end;
+  
+  }
+  
+   
+   
+  footer img {
+    width: 48px;
+    height: 48px;
+    padding-left: 24px;
+  }
+  
+  
+  
+  footer .contect {
+    color: #fff;
+    font-size: 36px;
+    line-height: 1.5;
+    padding-bottom: 32px;
+    border-bottom: #fff solid 1px;
+  }
+  
+  .cpnotice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .privacy {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .privacy li {
+    padding: 24px;
+  }
+   
