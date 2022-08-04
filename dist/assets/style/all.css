@@ -89,6 +89,9 @@ footer {
   color: #fff;
   padding: 32px;
   font-size: 20px; }
+  @media (max-width: 768px) {
+    .menu a {
+      display: none; } }
 
 .menu a:hover {
   color: #ecff8e; }
@@ -144,6 +147,9 @@ footer .contect {
   line-height: 1.5;
   padding-bottom: 32px;
   border-bottom: #fff solid 1px; }
+  @media (max-width: 768px) {
+    footer .contect {
+      font-size: 16px; } }
 
 .cpnotice {
   display: -webkit-box;
@@ -155,6 +161,15 @@ footer .contect {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 768px) {
+    .cpnotice {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: left;
+          -ms-flex-pack: left;
+              justify-content: left; } }
 
 .privacy {
   display: -webkit-box;
@@ -415,15 +430,20 @@ footer .contect {
   padding-bottom: 80px; }
 
 .contectform {
+  max-width: 636px;
+  margin: 0 auto;
   width: 45%;
   margin: 0 auto;
-  line-height: 1.5; }
+  line-height: 2;
+  font-size: 16px; }
   @media (max-width: 991px) {
     .contectform {
       width: 73%; } }
   @media (max-width: 768px) {
     .contectform {
       width: 100%; } }
+  .contectform li {
+    padding-bottom: 20px; }
   .contectform h2 {
     text-align: center;
     color: #650300;
@@ -433,22 +453,28 @@ footer .contect {
     @media (max-width: 768px) {
       .contectform h2 {
         font-size: 24px; } }
-  .contectform .list_container {
-    width: 100%; }
-
-@media (max-width: 768px) {
-  .menu a {
-    display: none; }
-  .cpnotice {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left; }
-  footer .contect {
+  .contectform .input-text {
+    width: 100%;
+    height: 36px;
+    border: #000000 solid 1px;
+    background-color: #FBF2F2;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px; }
+  .contectform .feedback {
+    padding-bottom: 106px; }
+  .contectform .name {
+    padding: 12px 0; }
+  .contectform .sumbit_btn {
+    margin: 20px;
+    text-align: center; }
+  .contectform .input-btn {
+    width: 416px;
+    background-color: #AA0601;
     color: #fff;
-    font-size: 16px; } }
+    margin: 0 auto;
+    border: none;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px; }
 
 /*# sourceMappingURL=all.css.map */
