@@ -1,6 +1,8 @@
 @import "varnmixin";
 @import "reset";
 @import "layout";
+@import "indexpage";
+@import "question";
 
 .container {
   max-width: 1320px;
@@ -16,13 +18,11 @@
   }
 }
 
-.sec2under{
-  background-color:#FBF2F2 ;
-}
 
-.sec2{
+.service{
   padding-top: 48px;
   padding-bottom: 80px;
+  background-color:#FBF2F2 ;
 
     h2{
       font-size: 48px;
@@ -49,25 +49,26 @@
       font-size: 16px;
       line-height: 1.5em;
     }
+        
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 24px;
+      @include tab{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+      }
+      @include mobile{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 12px;
+      }
+    }
 }
 
-.sec2grid{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 24px;
-  @include tab{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 24px;
-  }
-  @include mobile{
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 12px;
-  }
-}
 
-.sec3box{
+.classiclassess{
   margin-top: 80px;
   margin-bottom: 80px;
   text-align: center;
@@ -84,7 +85,6 @@
   }
   .gridcontainer{
     display: grid;
-
     grid-template-columns: repeat(3,1fr);
     gap: 24px;
     justify-content: center;
@@ -96,6 +96,7 @@
       gap: 24px;
       align-items: center;
     }
+    
     @include mobile{
       @include tab{
         display: grid;
@@ -132,27 +133,38 @@
 }
  
 
-.sec4{
+.designglasses{
   background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png)no-repeat center;
   background-size: cover;
   max-width: 100%;
   padding-bottom: 80px;
+  @include tab{
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png)no-repeat center;
+  }
 
   h2{
     color: #fff;
-    font-size: 72px;
+    font-size: 48px;
     text-align: center;
     padding: 80px;
     font-weight: bold;
+    @include mobile{
+      font-size: 24px;
+      padding: 40px;
+    }
   }
   img{
     height: 240px;
     display: block;   
   }
-  .sec4flex{
+  .designflex{
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
   } 
+  .flexitem{
+    padding-bottom: 24px;
+  }
 
   h3{
     color:$titlecolor ;
@@ -168,88 +180,101 @@
 }
 
 
-.sec5{
+.customer_recomm{
   margin-top: 40px;
   margin-bottom: 80px;
   line-height: 1.5;
+  font-size: 16px;
 
-  .sec5grid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+  .recommen_flex{
+    // display: grid;
+    // grid-template-columns: repeat(4,1fr);
+    display: flex;
+    justify-self: center;
     gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .flexitem{
+    width: 23%;
     @include tab{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 24px;
+      width: 46%;
     }
     @include mobile{
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      gap: 24px;
+      width: 100%;
     }
-
   }
+
   h2{
     text-align: center;
     color: #650300;
     font-size: 48px;
     font-weight: bold;
     padding-bottom: 24px;
-
   }
+
   img{
     max-width: 100%;
-    display: block;
-    border-radius: 4px;
+
+  }
+  h4{
+    padding: 3px 16px;
+    font-weight: bold;
+
+  }
+  p{
+    padding: 16px;
+    margin-bottom: 10px;
+  }
+  .date{
+    color: #707070;
+    font-size: 14px;
   }
   .card{
- 
+    
+    min-width: 100%;
     border-radius: 4px;
-    box-shadow: 0px 2px 6px #00000029;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3)
   }
+ 
 }
 
-
-.headerimg{
-  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png) no-repeat center;
-  background-size: cover;
-  height: 787px;
-  max-width: 100%;
+.contacctus_under{
+  background-color: #FBF2F2;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
+.contectform{
+  width: 45%;
+  margin: 0 auto;
+  line-height: 1.5;
 
-@media (max-width:991px) {
-  .sec4flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  } 
-}
+    @include tab{
+      width: 73%;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  
+  h2{
+    text-align: center;
+    color: #650300;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 24px;
+      @include mobile{
+        font-size: 24px;
+      }
+    }
 
-@media (max-width:768px) {
-
-  .headerimg{
-    height: 375px;
-  }
-
-  .sec2{
-    margin-bottom: 40px;
-    h2{
-      font-size: 24px;
+    .list_container{
+      width: 100%;
     }
   }
- 
-  
-  .menu a {
-  display: none;
-  }
 
-  footer img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .footerlist li{
+@media (max-width:768px) {
+  .menu a {
     display: none;
   }
   .cpnotice {
@@ -259,21 +284,7 @@
   footer .contect {
     color: #fff;
     font-size: 16px;
-  }
- 
-  }
-  .sec4{
- 
-    h2{
-      font-size: 24px;
-      padding: 40px;
     }
-    img{
-      max-width: 100%;
-      background:cover;
-    }
-    .s4flexitem{
-      padding-bottom: 20px;
-    }
+  
   }
-
+  

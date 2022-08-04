@@ -1,0 +1,13 @@
+
+
+.headerimg{
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png) no-repeat center;
+    background-size: cover;
+    height: 787px;
+    max-width: 100%;
+    @include mobile{
+        height: 375px;
+    }
+  }
+
+  
