@@ -54,6 +54,7 @@ $font-color-1:#650300;
     p{
       font-size: 16px;
       line-height: 1.5em;
+      color:#000;
     }
         
     .grid{
@@ -250,21 +251,25 @@ $font-color-1:#650300;
   background-color: $lightbg;
   padding-top: 80px;
   padding-bottom: 80px;
+  @include mobile{
+    padding-bottom: 40px;
+  }
 }
 
 .contectform{
-  max-width: 636px;
+  max-width: 100%;
   margin: 0 auto;
   width: 45%;
-  margin: 0 auto;
   line-height: 2;
   font-size: 16px;
+  padding: 0 12px;
 
     @include tab{
-      max-width: 73%;
+      width: 73%;
     }
     @include mobile{
-      max-width: 100%;
+      width: 90%;
+      padding: 12px ;
     }
 
     li{
@@ -285,7 +290,7 @@ $font-color-1:#650300;
 
       .input-text{
         width: 100%;
-        padding: 8px;;
+        padding: 8px 0;
         border: #000000 solid 1px;
         background-color: #FBF2F2;
         font-size: 16px;
@@ -308,6 +313,12 @@ $font-color-1:#650300;
         border:none;
         padding:16px 0;
         font-size: 16px;
+        @include tab{
+          max-width: 73%;
+        }
+        @include mobile{
+          max-width: 100%;
+        }
       }
       .input-btn:hover{
         background-color: $font-color-1;
