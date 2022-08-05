@@ -118,9 +118,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-bottom: 24px;
   border-bottom: #fff solid 1px; }
   @media (max-width: 768px) {
@@ -136,6 +133,7 @@ footer {
     .footerlist {
       display: none; } }
   .footerlist a {
+    padding-top: 40px;
     color: #fff;
     font-size: 16px;
     padding-right: 24px; }
@@ -160,9 +158,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 40px; }
+  @media (max-width: 768px) {
+    .socialicon {
+      padding-top: 24px; } }
   .socialicon img {
     height: 48px;
     padding-left: 24px; }
