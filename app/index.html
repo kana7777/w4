@@ -6,15 +6,21 @@ engine: ejs
 <!-- Header區塊 -->
 
 <header class="header">
-  <div class="headerimg">
-      <div class="container">
-          <div class="headerflex">
-              <h4>Promise-Desert 2020 早春系列</h4>
-              <h3>看得清，才能看得遠</h3>
-              <h5><a href="page2.html">立刻購買</a></h5>
-          </div>
-      </div>
-  </div>   
+    <div class="headerimg">
+      <div class="headercontent ">
+        <div class="headerflex">
+            <div class="headrflexitem">
+                <h4>Promise-Desert 2020 早春系列</h4>
+            </div>
+            <div class="headrflexitem">
+                <h3>看得清，才能看得遠</h3>
+            </div>
+            <div class="headrflexitem">
+                <h5><a href="#">立即購買</a></h5>
+            </div>
+ 
+        </div>
+    </div>   
 </header>
 <main>
     <!-- 首頁的區塊2 -->
@@ -81,11 +87,18 @@ engine: ejs
         <h2>聯名設計鏡框</h2>
         <div class="designflex">
             <div class="flexitem">
-                <img src="./assets/images/home-section4-1.png" alt="" class="design_photo1">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./assets/images/home-section4-1-sm.png">
+                    
+                    <img src="./assets/images/home-section4-1.png" alt="" class="design_photo1">
+                </picture>
                 <h3>DOUBLE A+</h3>
             </div>
             <div class="flexitem">
-                <img src="./assets/images/home-section4-2.png" alt="">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./assets/images/home-section4-2-sm.png">
+                    <img src="./assets/images/home-section4-2.png" alt="" class="design_photo1">
+                </picture>
                 <h3>YOUTH</h3>
             </div>
         </div>
@@ -119,7 +132,7 @@ engine: ejs
                 <div class="card">
                 <img src="./assets/images/home-section5-3.png" alt="">
                     <h4>悠悠</h4>
-                    <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+                    <p>成功買到了喜歡的眼鏡，下次會再回購！</p>
                     <p class="date">2021/06/20</p>
                 </div>
             </div>
@@ -166,7 +179,7 @@ engine: ejs
                     <li class="sumbit_btn">
                         <input type="button" class="input-btn" value="確認送出">
                     </li>
-                </ul>
+                </ul> 
             </form>
         </div>
     </div>
