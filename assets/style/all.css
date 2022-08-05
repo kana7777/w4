@@ -182,14 +182,61 @@ footer .contect {
 .privacy li {
   padding: 24px; }
 
-.headerimg {
-  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png) no-repeat center;
-  background-size: cover;
-  height: 787px;
-  max-width: 100%; }
-  @media (max-width: 768px) {
-    .headerimg {
-      height: 375px; } }
+header {
+  color: #650300;
+  display: block; }
+  header .headerimg {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png) no-repeat center;
+    background-size: cover;
+    height: 787px;
+    max-width: 100%; }
+    @media (max-width: 768px) {
+      header .headerimg {
+        background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png) no-repeat center;
+        height: 375px; } }
+  header .headercontent {
+    max-width: 1320px;
+    height: 787px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 36px; }
+    @media (max-width: 768px) {
+      header .headercontent {
+        height: 375px;
+        padding: 0 12px; } }
+  header h3 {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: right; }
+    @media (max-width: 768px) {
+      header h3 {
+        font-size: 24px; } }
+  header h4 {
+    font-size: 36px;
+    text-align: right; }
+    @media (max-width: 768px) {
+      header h4 {
+        font-size: 16px; } }
+  header .headrflexitem {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  header h5 {
+    text-align: right;
+    margin-top: 26px; }
+  header a {
+    background-color: #aa0601;
+    color: #FFF;
+    font-size: 20px;
+    padding: 8px 10px;
+    border: none; }
 
 .qa h1 {
   margin-top: 100px;
@@ -237,16 +284,18 @@ footer .contect {
 .service {
   padding-top: 48px;
   padding-bottom: 80px;
-  background-color: #FBF2F2; }
+  background-color: #FBF2F2;
+  color: #650300; }
   .service h2 {
     font-size: 48px;
-    color: #650300;
     padding: 36px;
     font-weight: bold;
     text-align: center; }
+    @media (max-width: 768px) {
+      .service h2 {
+        font-size: 24px; } }
   .service span {
     font-size: 84px;
-    color: #650300;
     display: block;
     padding: 24px;
     text-align: center; }
@@ -254,7 +303,6 @@ footer .contect {
     font-size: 24px;
     font-weight: bold;
     padding: 16px;
-    color: #650300;
     text-align: center; }
   .service p {
     font-size: 16px;
@@ -277,10 +325,10 @@ footer .contect {
 .classiclassess {
   margin-top: 80px;
   margin-bottom: 80px;
-  text-align: center; }
+  text-align: center;
+  color: #650300; }
   .classiclassess h2 {
     text-align: center;
-    color: #650300;
     font-weight: bold;
     font-size: 48px;
     padding-bottom: 48px; }
@@ -329,13 +377,13 @@ footer .contect {
       .classiclassess img {
         height: 348px; } }
   .classiclassess h3 {
-    color: #aa0601;
+    font-family: 'Roboto', sans-serif;
+    color: #AA0601;
     text-align: center;
     font-style: italic;
     font-weight: bold;
     font-size: 48px;
-    line-height: 1.5;
-    font-family: 'Roboto', sans-serif; }
+    line-height: 1.5; }
 
 .designglasses {
   background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png) no-repeat center;
@@ -370,7 +418,7 @@ footer .contect {
   .designglasses .flexitem {
     padding-bottom: 24px; }
   .designglasses h3 {
-    color: #aa0601;
+    color: #650300;
     text-align: center;
     font-style: italic;
     font-weight: bold;
@@ -419,10 +467,19 @@ footer .contect {
     color: #707070;
     font-size: 14px; }
   .customer_recomm .card {
-    min-width: 100%;
+    min-height: 100%;
     border-radius: 4px;
     -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); }
+  .customer_recomm .card:hover {
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
 
 .contacctus_under {
   background-color: #FBF2F2;
@@ -458,7 +515,6 @@ footer .contect {
     height: 36px;
     border: #000000 solid 1px;
     background-color: #FBF2F2;
-    color: rgba(0, 0, 0, 0.5);
     font-size: 16px; }
   .contectform .feedback {
     padding-bottom: 106px; }
@@ -471,10 +527,10 @@ footer .contect {
     width: 416px;
     background-color: #AA0601;
     color: #fff;
-    margin: 0 auto;
     border: none;
     padding: 16px;
-    text-align: center;
     font-size: 16px; }
+  .contectform .input-btn:hover {
+    background-color: #650300; }
 
 /*# sourceMappingURL=all.css.map */
