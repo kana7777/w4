@@ -530,6 +530,12 @@ header {
     border: none;
     padding: 16px 0;
     font-size: 16px; }
+    @media (max-width: 991px) {
+      .contectform .input-btn {
+        max-width: 73%; } }
+    @media (max-width: 768px) {
+      .contectform .input-btn {
+        max-width: 100%; } }
   .contectform .input-btn:hover {
     background-color: #650300; }
 
